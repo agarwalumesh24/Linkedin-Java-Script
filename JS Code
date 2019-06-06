@@ -1,0 +1,27 @@
+$(document).ready(function(){
+   
+   function PlayAgain() {
+       
+      $("button:contains('Connect')").trigger('click');
+      $("button:contains('Send')").trigger('click');
+      $("button:contains('Follow')").trigger('click');
+   
+        x = setTimeout(function(){PlayAgain()},2000);
+   
+       }
+        
+                PlayAgain();
+   
+                  
+        function PlayNext() {
+       
+      $("button:contains('Next')").trigger('click');
+      
+        y = setTimeout(function(){PlayNext()},12000);
+   
+       }
+        
+                PlayNext();
+   
+    });
+    
